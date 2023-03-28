@@ -1,0 +1,51 @@
+  <!--Card content-->
+  <div class="card-body">
+    <!--Title-->
+    <img src="assets/pauwel.png" width="600" height="145" class="pauwel">
+  <!--   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=S7DJTa7ItMU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+  <!--   <iframe width="560" height="315" src="https://www.youtube.com/embed/S7DJTa7ItMU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oNs0NoVTJf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+<!-- Card -->
+    <!-- Card content -->
+    <div class="card-body">
+      <!-- Title -->
+      <h4 class="card-title"><a>future shows</a></h4>
+      <!-- Text -->
+      <br>
+      <pre class="card-text">10/10/2020: Labadoux, Ingelmunster
+                   </pre>
+
+      <pre class="card-text">11/11/2020: De Casino, Sint-Niklaas
+                   EP-release</pre>
+
+      <pre class="card-text">14/11/2020: CC Merksem, Merksem
+                   w. Echo Beatty</pre>
+      
+      <pre class="card-text">04/04/2021: De Roma, Antwerpen 
+                   w. Vito</pre>
+ 
+      <!--
+      <pre class="card-text">22/04/2019: Charlatan, Gent
+                   w. Danny Blue & The Old Socks</pre>
+ 
+      <pre class="card-text">25/04/2019: Trix, Antwerpen
+                   w. Danny Blue & The Old Socks</pre>
+      -->
+      <br>
+    </div>
+  <!-- Card -->
+      <!-- Card content -->
+        <!-- Title -->
+        <h4 class="past-title"><a>past shows</a></h4>
+        <img src="assets/arrow-down.png" width="30" height="30" class="arrow">
+      <div class="past">
+        <!-- Text -->
+        <pre class="card-text" *ngFor="let optreden of optredens">{{optreden.datum}}: {{optreden.plaats}}
+                   {{optreden.featuring}}</pre>
+          
+      </div>
+  <!-- Card -->
+  <br>
+  <br>
+  <br>

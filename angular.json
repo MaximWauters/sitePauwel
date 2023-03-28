@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test153": {
+    "sitePauwel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test153",
+            "outputPath": "dist/sitePauwel",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -32,7 +32,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/chart.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -65,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "test153:build:production"
+              "browserTarget": "sitePauwel:build:production"
             },
             "development": {
-              "browserTarget": "test153:build:development"
+              "browserTarget": "sitePauwel:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "test153:build"
+            "browserTarget": "sitePauwel:build"
           }
         },
         "test": {

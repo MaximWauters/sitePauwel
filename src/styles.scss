@@ -1,1 +1,127 @@
 /* You can add global styles to this file, and also import other style files */
+// global styles
+
+
+body {
+     //background-image: url("assets/bk2.jpg");
+     overflow-y: scroll;
+ }
+
+ .card {
+     background-color: transparent;
+     //background-color: rgba(30, 41, 51,10);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     position: relative;
+     
+ }
+
+ .past{
+    height: 200px;
+    overflow: auto;
+    margin-left: 20px;
+ }
+
+ .past-title{
+     margin-left: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif
+     
+ }
+
+ .card-title{
+     //color: rgb(194, 192, 106);
+     //background-color: rgba(0, 0, 0, 0.5);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     z-index: 10;
+     display: block;
+     //font-family: DisposableDroid BB;
+ }
+
+ .card-text{
+     //color: rgb(117, 54, 54);
+     //background-color: rgba(0, 0, 0, .5);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     //z-index: 10;
+     display: block;  
+     //height: 10px;
+     //overflow: auto;
+     
+ }
+
+ .titel{
+     font-size: 800%;
+     font-family: Nemoy;
+ }
+
+ .icon{
+     width: 44px;
+     height: 44px;
+     margin-left:30px;
+ }
+
+ .pauwel{
+    margin-left: -25px;
+ }
+
+ .arrow{
+     margin-left: 550px;
+     margin-top: -80px;
+ }
+
+ // medium schermen zoals ipad pro
+
+ @media only screen and (max-width: 600px) {
+    body{
+        //width: 400px;
+    }
+
+    .arrow{
+        margin-left: 300px;
+        margin-top: -65px;
+    }
+
+    .pauwel{
+        width:350px;
+        height: 100px;
+    }
+
+    .lineup{
+        margin-top: -90px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+ }
+
+
+// smalle schermen als iphone4
+
+@media only screen and (max-width: 320px) {
+    body{
+       // width: 300px;
+    }
+
+    iframe {
+        width: 240px;
+        height: 160px;   
+    }
+
+    .pauwel{
+        width:290px;
+        height: 70px;
+    }
+
+    .icon{
+        margin-left:2px;
+    }
+}
+
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
